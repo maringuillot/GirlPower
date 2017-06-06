@@ -3,13 +3,14 @@
 <head>
     <title>London's Chef</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-
+  
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="index.css">
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
@@ -20,46 +21,48 @@
 
 <body>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container"> 
-        <a href="code.html" class="navbar-brand">London's Chef</a>
-        <ul class="nav navbar-nav"> 
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li> 
-            <li><a href="#">Restaurants</a></li>
-        </ul>
 
-        <form class="navbar-form navbar-left pull-right" role="search">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-    </div>
-</nav>
+<center>
+    <div class="jumbotron">
+        <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container"> 
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="logo1.png">
+                </a>
+            </div>
+                <ul class="nav navbar-nav"> 
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li> 
+                <li><a href="#">Restaurants</a></li>
+            </ul>
 
-
-<div class="container">
-    <center>
-        <div class="jumbotron">
-            <h1>Choose recipes from <strong>London's</strong> best restaurants!</h1>
+            <form class="navbar-form navbar-left pull-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+        </nav>
+            <h1> Choose recipes from <strong>London's</strong> best restaurants!</h1>
             <p><a class="btn btn-primary btn-lg" href="#" role="button">DISCOVER</a></p>
         </div>
-    </center>
-</div>
+    </div>
+</center>
 
-<div class="row">
+
+<div class="row" id="row1">
     <div class="container">
 
-        <div class="col-md-8"> 
+        <div class="col-md-12"> 
             <div class= "recipe">
-                <div style = "POSITION: absolute; TOP: 180px; LEFT: 150px">
-                    <IMG border="0" align="Left"  hspace="40" src="http://s3-eu-west-1.amazonaws.com/kotaabouttime/wp-content/uploads/2017/05/26104410/Bc_Thanks_High_01.jpg" alt="Avocado Toast" style="width:304px;height:228px;" />
+                <div>
+                    <IMG border="40" align="Left"  hspace="40" vspace="40" src="sweetpotato.jpg" alt="Sweet Potato" style="width:304px;height:228px;" />
 
-                    <h2>Ben's Canteen</h2>
-                    <h1>Avocado Toast with poached egg</h1>
-                    <p>A neighbourhood hangout where we specialise in Burgers, Wine and Brunch.
-                    Every night, from 5pm, we serve premium gourmet Burgers paired with exciting Wines. ...</p>
+                    <h2>Lindsey's Kitchen</h2>
+                    <h1 class="headerrecipe">Sweet potato gnocchi with broccoli</h1>
+                    <p>Sweet Potato Gnocchi is about to happen in your life. Get ready. For the gnocchi: Stick the sweet potato a few times with a fork, wrap in a damp paper towel, and microwave until soft, about 7 minutes...</p>
                 </div>
             </div>
         </div>
@@ -67,8 +70,9 @@
     </div>
 </div>
 
+<center>
 
-<div class="row">
+<div class="row" id="row2">
     <div class="container"> 
 
         <div class="col-md-4">
@@ -99,6 +103,53 @@
         </div>
     </div>
 </div>
+</center>
+
+<div class="row" id="row3">
+    <div class="container">
+
+        <div class="col-md-12"> 
+            <div class= "recipe">
+                <div>
+                    <IMG border="40" align="Left"  hspace="40" vspace="40" src="chef2.jpg" alt="Chef" style="width:239px;height:327px;" />
+
+                    <h2>Chef of the week</h2>
+                    <h1 class="headchef">Marcus Wareing</h1>
+                    <p>South Londoner Marcus Wareing began his cooking career aged 18 at The Savoy and has since worked with top chefs including Albert Roux, Pierre Koffmann and Gordon Ramsay and in restaurants around the world. For nine years he was Chef Patron at Pétrus at The Berkeley Hotel in Knightsbridge after which he re-launched the restaurant under his own name in 2008 and retained its two Michelin stars...</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+ 
+ <footer class="page-footer">
+
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <img src="logo1.png" alt="Logo" style="width:139px;height:127px;">
+                <h5 class="white-text">London's chef</h5>
+                <p class="grey-text text-lighten-4">Thank you for visiting our amazing website, we hope to see you soon!</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Follow us on:</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Google Plus</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 Copyright London's Chef
+            </div>
+          </div>
+        </footer>
 
 </body>
 </html>
